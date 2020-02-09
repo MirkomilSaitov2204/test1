@@ -1,0 +1,46 @@
+.jumbotron {
+    background: url('https://source.unsplash.com/user/erondu/daily') bottom center no-repeat;
+    
+    background-size: cover;
+    background-attachment: fixed;
+  
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;
+    /* background-color: #fff; */
+  }
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+  }
+  .album img{
+      height: 50vh !important;
+  }
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 2rem;
+    color: black;
+}
+  
+#main-footer{
+    background: #222;
+    color: antiquewhite;
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
+}
+#main-footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    /* padding: 2.5rem; */
+}
