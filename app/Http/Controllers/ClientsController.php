@@ -31,6 +31,15 @@ class ClientsController extends Controller
 
     public function questionStore(Request $request)
     {
+        // dd($request->question_id);
+            // $item = Answer::where('question_id', );
+        foreach($request->question_id as $q_id)
+        {
+            $this->validate($request, [
+                'correct_'.$q_id.'' =>'required'
+            ]);
+        }
+
         //  dd($request);
         $count = 0;
         // $category_data = array(
@@ -40,6 +49,7 @@ class ClientsController extends Controller
 
         foreach($request->question_id as $request_id)
         {
+
             $correct = 'correct_'.$request_id;
             //   dd($request->$correct);
                 $answer = Answer::where('question_id', $request_id)->where('correct', $request->$correct)->first();
