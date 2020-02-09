@@ -22,7 +22,7 @@
                                     <a class="nav-link active" href="{{ route('home') }}">Home</a>
                                   </li>
                                   <li class="nav-item">
-                                    <a class="nav-link" href="question.html">Savollar</a>
+                                  <a class="nav-link" href="{{route('question')}}">Savollar</a>
                                   </li>
                                   <li class="nav-item">
                                     <a class="nav-link" href="{{ route('about') }}">Men haqimda</a>
@@ -31,7 +31,7 @@
                                   <li class="nav-item">
                                       <a class="nav-link" href="#">Contact</a>
                                   </li>
-                                
+
                       </ul>
 
                     </div>
